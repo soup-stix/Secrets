@@ -1,0 +1,262 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spacing{
+  height: 150px;
+}
+
+.home .btn{
+  margin-top: 50px !important;
+  margin: 30px;
+  font-size: 30px;
+  display: inline-block;
+  justify-content: space-between;
+}
+
+.btn-clipboard {
+  position: absolute;
+  top: .5rem;
+  right: .5rem;
+  z-index: 10;
+  display: block;
+  padding: .25rem .5rem;
+  font-size: 75%;
+  color: #818a91;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  border-radius: .25rem;
+}
+
+.bd-clipboard :hover {
+  background-color: #7b7a7abd !important;
+  color: white;
+}
+
+h1{
+  padding: 20px;
+}
+
+.label{
+  display: flex;
+  justify-content: row;
+  width: 100%
+}
+
+label{
+  font-size: 15px;
+}
+
+/* Navbar */
+
+.navbar {
+  background-color:#292b2c;
+}
+
+.navbar-brand{
+  padding-left: 10px;
+}
+
+/* Footer */
+
+.footer {
+  position: absolute; 
+  top: 85%;
+  bottom: -10;
+  align-items: center;
+  font-size: 10px;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  background-color:#292b2c;
+  color: #fff;
+}
+
+.footer a:hover{
+  color: black;
+}
+
+.footer a{
+  text-decoration: none;
+}
+
+.footer .portfolio{
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 60px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa-github{
+  color: #000000;
+}
+
+.fa-linkedin {
+  color: #349ade;
+}
+
+.fa-instagram {
+  color: #c2034f;
+}
+
+.fa-google {
+  color: #d9534f;
+}
+
+
+/* forms */
+
+.form-group {
+  margin: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.form-control {
+  margin: 10px;
+}
+
+/* tootltip */
+
+.help-tip {
+  position: relative;
+  left: 5px;
+  text-align: center;
+  background-color: #29b6f6;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  font-size: 12px;
+  line-height: 26px;
+  cursor: default;
+  transition: all 0.5s cubic-bezier(0, 0.55, 0.1, 1);
+}
+
+.help-tip:hover {
+  cursor: pointer;
+  background-color: #ccc;
+}
+
+.help-tip:before {
+  content: '?';
+  font-weight: 700;
+  color: #fff;
+}
+
+.help-tip p {
+  visibility: hidden;
+  opacity: 0;
+  text-align: center;
+  background-color: #039be5;
+  padding: 10px;
+  width: 300px;
+  position: absolute;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 13px;
+  line-height: normal;
+  transform: scale(0.7);
+  transform-origin: 0% 0%;
+  transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+}
+
+.help-tip:hover p {
+  cursor: default;
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1.0);
+}
+
+.help-tip p:before {
+  position: relative;
+  content: '';
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-bottom-color: #039be5;
+  left: 10px;
+  top: -12px;
+}
+
+.help-tip p:after {
+  width: 100%;
+  height: 40px;
+  content: '';
+  position: relative;
+  top: -0px;
+  left: 0;
+}
+
+.help-tip a {
+  color: #fff;
+  font-weight: 700;
+}
+
+.help-tip a:hover, .help-tip a:focus {
+  color: #fff;
+}
+
+.card {
+  margin: 30px;
+}
+
+@media only screen and (max-width: 800px){
+.footer {
+  position: absolute; 
+  top: 95%;
+  bottom: -10;
+  align-items: center;
+  font-size: 10px;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  background-color:#292b2c;
+  color: #fff;
+}
+}
